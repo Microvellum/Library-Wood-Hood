@@ -82,7 +82,7 @@ class Static_Wall_Appliance(fd_types.Assembly):
         assembly.set_name(get_file_name(self.appliance_path))
         self.width = assembly.obj_x.location.x
         self.height = assembly.obj_z.location.z
-        self.depth = assembly.obj_y.location.y
+        self.depth = -assembly.obj_y.location.y
         assembly.assign_material("Chrome",MATERIAL_FILE,"Chrome")
         assembly.assign_material("Stainless Steel",MATERIAL_FILE,"Stainless Steel")
         assembly.assign_material("Black Anodized Metal",MATERIAL_FILE,"Black Anodized Metal")
